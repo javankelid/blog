@@ -1,1 +1,1 @@
-blag for javankelid
+blog for javankelid
