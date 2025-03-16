@@ -1,0 +1,147 @@
+.post-content{
+    font-family: inherit !important;
+    font-size: inherit !important;
+    text-align: justify;
+    direction: rtl;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    background: #2c3930;
+    direction: rtl;
+    font-family: IRANYekan, sans-serif;
+    font-size: 0.9rem;
+}
+
+.outer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: lightgray;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2C3930;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #007bff;
+}
+
+.main-content {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2C3930;
+    width: 90%;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.main-header {
+    font-size: 2.5rem;
+    background: linear-gradient(180deg, white, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*table related css*/
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    /*font-size: 0.9em;*/
+    font-family: sans-serif;
+    min-width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    direction: rtl;
+    text-align: right;
+}
+.styled-table thead tr {
+    background-color: #2c3930;
+    color: #ffffff;
+    text-align: right;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.text-image {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.image-inline {
+    max-width: 100%;
+    max-height:100%;
+    margin: 20px;
+    text-align: center ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .text-image {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        row-gap: 10px; /* Add space between rows */
+        padding-left: 20px; /* Reduce padding for smaller screens */
+        padding-right: 20px;
+    }
+    .image-inline{
+        width: 70%;
+    }
+}
+
+.text-inline{
+    margin: 20px;
+}
+
