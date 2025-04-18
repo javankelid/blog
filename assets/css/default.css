@@ -144,6 +144,9 @@ nav a:hover {
     .text-image-separator{
         width: 70%;
     }
+    .main-content{
+        width: 100%;
+    }
 }
 
 .text-inline{
